@@ -1,0 +1,6 @@
+/* Taken from this link: https://bootsnipp.com/snippets/MaKa3 */
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}

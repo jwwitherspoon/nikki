@@ -1,0 +1,386 @@
+<!--TODO
+	add reasons
+	add scroll bar to dropdown
+	make button glyphicons work?
+	add "view all" page?
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <title>Happy Anniversary!</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<style>
+			/* Taken from this link: https://bootsnipp.com/snippets/MaKa3 */
+			.scrollable-menu {
+			    height: auto;
+			    max-height: 200px;
+			    overflow-x: hidden;
+			}
+		</style>
+	</head>
+	<body style="background-color:#7c3ddb;">
+		<div class="container">
+			<h1 class="text-center text-white">365 Reasons Why I Love Nikki</h1>
+			<div class="jumbotron bg-light text-center">
+				<h2 id="card">This a website version of the book you made me last year. Click Next or Random for reasons why I love you!</h2>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-2 text-center">
+					<button class="btn btn-light" onclick="previous()">Previous</button>
+				</div>
+				<div class="col-2 text-center">
+					<button class="btn btn-light" onclick="random()">Random</button>
+				</div>
+				<div class="col-2 text-center">
+					<button class="btn btn-light" onclick="next()">Next</button>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="dropdown">
+					<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Select Reason
+					</button>
+					<div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
+						<button class="dropdown-item" type="button" onclick="card(1)">1</button>
+						<button class="dropdown-item" type="button" onclick="card(2)">2</button>
+						<button class="dropdown-item" type="button" onclick="card(3)">3</button>
+						<button class="dropdown-item" type="button" onclick="card(4)">4</button>
+						<button class="dropdown-item" type="button" onclick="card(5)">5</button>
+						<button class="dropdown-item" type="button" onclick="card(6)">6</button>
+						<button class="dropdown-item" type="button" onclick="card(7)">7</button>
+						<button class="dropdown-item" type="button" onclick="card(8)">8</button>
+						<button class="dropdown-item" type="button" onclick="card(9)">9</button>
+						<button class="dropdown-item" type="button" onclick="card(10)">10</button>
+						<button class="dropdown-item" type="button" onclick="card(11)">11</button>
+						<button class="dropdown-item" type="button" onclick="card(12)">12</button>
+						<button class="dropdown-item" type="button" onclick="card(13)">13</button>
+						<button class="dropdown-item" type="button" onclick="card(14)">14</button>
+						<button class="dropdown-item" type="button" onclick="card(15)">15</button>
+						<button class="dropdown-item" type="button" onclick="card(16)">16</button>
+						<button class="dropdown-item" type="button" onclick="card(17)">17</button>
+						<button class="dropdown-item" type="button" onclick="card(18)">18</button>
+						<button class="dropdown-item" type="button" onclick="card(19)">19</button>
+						<button class="dropdown-item" type="button" onclick="card(20)">20</button>
+						<button class="dropdown-item" type="button" onclick="card(21)">21</button>
+						<button class="dropdown-item" type="button" onclick="card(22)">22</button>
+						<button class="dropdown-item" type="button" onclick="card(23)">23</button>
+						<button class="dropdown-item" type="button" onclick="card(24)">24</button>
+						<button class="dropdown-item" type="button" onclick="card(25)">25</button>
+						<button class="dropdown-item" type="button" onclick="card(26)">26</button>
+						<button class="dropdown-item" type="button" onclick="card(27)">27</button>
+						<button class="dropdown-item" type="button" onclick="card(28)">28</button>
+						<button class="dropdown-item" type="button" onclick="card(29)">29</button>
+						<button class="dropdown-item" type="button" onclick="card(30)">30</button>
+						<button class="dropdown-item" type="button" onclick="card(41)">41</button>
+						<button class="dropdown-item" type="button" onclick="card(42)">42</button>
+						<button class="dropdown-item" type="button" onclick="card(43)">43</button>
+						<button class="dropdown-item" type="button" onclick="card(44)">44</button>
+						<button class="dropdown-item" type="button" onclick="card(45)">45</button>
+						<button class="dropdown-item" type="button" onclick="card(46)">46</button>
+						<button class="dropdown-item" type="button" onclick="card(47)">47</button>
+						<button class="dropdown-item" type="button" onclick="card(48)">48</button>
+						<button class="dropdown-item" type="button" onclick="card(49)">49</button>
+						<button class="dropdown-item" type="button" onclick="card(50)">50</button>
+						<button class="dropdown-item" type="button" onclick="card(51)">51</button>
+						<button class="dropdown-item" type="button" onclick="card(52)">52</button>
+						<button class="dropdown-item" type="button" onclick="card(53)">53</button>
+						<button class="dropdown-item" type="button" onclick="card(54)">54</button>
+						<button class="dropdown-item" type="button" onclick="card(55)">55</button>
+						<button class="dropdown-item" type="button" onclick="card(56)">56</button>
+						<button class="dropdown-item" type="button" onclick="card(57)">57</button>
+						<button class="dropdown-item" type="button" onclick="card(58)">58</button>
+						<button class="dropdown-item" type="button" onclick="card(59)">59</button>
+						<button class="dropdown-item" type="button" onclick="card(60)">60</button>
+						<button class="dropdown-item" type="button" onclick="card(61)">61</button>
+						<button class="dropdown-item" type="button" onclick="card(62)">62</button>
+						<button class="dropdown-item" type="button" onclick="card(63)">63</button>
+						<button class="dropdown-item" type="button" onclick="card(64)">64</button>
+						<button class="dropdown-item" type="button" onclick="card(65)">65</button>
+						<button class="dropdown-item" type="button" onclick="card(66)">66</button>
+						<button class="dropdown-item" type="button" onclick="card(67)">67</button>
+						<button class="dropdown-item" type="button" onclick="card(68)">68</button>
+						<button class="dropdown-item" type="button" onclick="card(69)">69</button>
+						<button class="dropdown-item" type="button" onclick="card(70)">70</button>
+						<button class="dropdown-item" type="button" onclick="card(71)">71</button>
+						<button class="dropdown-item" type="button" onclick="card(72)">72</button>
+						<button class="dropdown-item" type="button" onclick="card(73)">73</button>
+						<button class="dropdown-item" type="button" onclick="card(74)">74</button>
+						<button class="dropdown-item" type="button" onclick="card(75)">75</button>
+						<button class="dropdown-item" type="button" onclick="card(76)">76</button>
+						<button class="dropdown-item" type="button" onclick="card(77)">77</button>
+						<button class="dropdown-item" type="button" onclick="card(78)">78</button>
+						<button class="dropdown-item" type="button" onclick="card(79)">79</button>
+						<button class="dropdown-item" type="button" onclick="card(80)">80</button>
+						<button class="dropdown-item" type="button" onclick="card(81)">81</button>
+						<button class="dropdown-item" type="button" onclick="card(82)">82</button>
+						<button class="dropdown-item" type="button" onclick="card(83)">83</button>
+						<button class="dropdown-item" type="button" onclick="card(84)">84</button>
+						<button class="dropdown-item" type="button" onclick="card(85)">85</button>
+						<button class="dropdown-item" type="button" onclick="card(86)">86</button>
+						<button class="dropdown-item" type="button" onclick="card(87)">87</button>
+						<button class="dropdown-item" type="button" onclick="card(88)">88</button>
+						<button class="dropdown-item" type="button" onclick="card(89)">89</button>
+						<button class="dropdown-item" type="button" onclick="card(90)">90</button>
+						<button class="dropdown-item" type="button" onclick="card(91)">91</button>
+						<button class="dropdown-item" type="button" onclick="card(92)">92</button>
+						<button class="dropdown-item" type="button" onclick="card(93)">93</button>
+						<button class="dropdown-item" type="button" onclick="card(94)">94</button>
+						<button class="dropdown-item" type="button" onclick="card(95)">95</button>
+						<button class="dropdown-item" type="button" onclick="card(96)">96</button>
+						<button class="dropdown-item" type="button" onclick="card(97)">97</button>
+						<button class="dropdown-item" type="button" onclick="card(98)">98</button>
+						<button class="dropdown-item" type="button" onclick="card(99)">99</button>
+						<button class="dropdown-item" type="button" onclick="card(100)">100</button>
+						<button class="dropdown-item" type="button" onclick="card(101)">101</button>
+						<button class="dropdown-item" type="button" onclick="card(102)">102</button>
+						<button class="dropdown-item" type="button" onclick="card(103)">103</button>
+						<button class="dropdown-item" type="button" onclick="card(104)">104</button>
+						<button class="dropdown-item" type="button" onclick="card(105)">105</button>
+						<button class="dropdown-item" type="button" onclick="card(106)">106</button>
+						<button class="dropdown-item" type="button" onclick="card(107)">107</button>
+						<button class="dropdown-item" type="button" onclick="card(108)">108</button>
+						<button class="dropdown-item" type="button" onclick="card(109)">109</button>
+						<button class="dropdown-item" type="button" onclick="card(110)">110</button>
+						<button class="dropdown-item" type="button" onclick="card(111)">111</button>
+						<button class="dropdown-item" type="button" onclick="card(112)">112</button>
+						<button class="dropdown-item" type="button" onclick="card(113)">113</button>
+						<button class="dropdown-item" type="button" onclick="card(114)">114</button>
+						<button class="dropdown-item" type="button" onclick="card(115)">115</button>
+						<button class="dropdown-item" type="button" onclick="card(116)">116</button>
+						<button class="dropdown-item" type="button" onclick="card(117)">117</button>
+						<button class="dropdown-item" type="button" onclick="card(118)">118</button>
+						<button class="dropdown-item" type="button" onclick="card(119)">119</button>
+						<button class="dropdown-item" type="button" onclick="card(120)">120</button>
+						<button class="dropdown-item" type="button" onclick="card(121)">121</button>
+						<button class="dropdown-item" type="button" onclick="card(122)">122</button>
+						<button class="dropdown-item" type="button" onclick="card(123)">123</button>
+						<button class="dropdown-item" type="button" onclick="card(124)">124</button>
+						<button class="dropdown-item" type="button" onclick="card(125)">125</button>
+						<button class="dropdown-item" type="button" onclick="card(126)">126</button>
+						<button class="dropdown-item" type="button" onclick="card(127)">127</button>
+						<button class="dropdown-item" type="button" onclick="card(128)">128</button>
+						<button class="dropdown-item" type="button" onclick="card(129)">129</button>
+						<button class="dropdown-item" type="button" onclick="card(130)">130</button>
+						<button class="dropdown-item" type="button" onclick="card(141)">141</button>
+						<button class="dropdown-item" type="button" onclick="card(142)">142</button>
+						<button class="dropdown-item" type="button" onclick="card(143)">143</button>
+						<button class="dropdown-item" type="button" onclick="card(144)">144</button>
+						<button class="dropdown-item" type="button" onclick="card(145)">145</button>
+						<button class="dropdown-item" type="button" onclick="card(146)">146</button>
+						<button class="dropdown-item" type="button" onclick="card(147)">147</button>
+						<button class="dropdown-item" type="button" onclick="card(148)">148</button>
+						<button class="dropdown-item" type="button" onclick="card(149)">149</button>
+						<button class="dropdown-item" type="button" onclick="card(150)">150</button>
+						<button class="dropdown-item" type="button" onclick="card(151)">151</button>
+						<button class="dropdown-item" type="button" onclick="card(152)">152</button>
+						<button class="dropdown-item" type="button" onclick="card(153)">153</button>
+						<button class="dropdown-item" type="button" onclick="card(154)">154</button>
+						<button class="dropdown-item" type="button" onclick="card(155)">155</button>
+						<button class="dropdown-item" type="button" onclick="card(156)">156</button>
+						<button class="dropdown-item" type="button" onclick="card(157)">157</button>
+						<button class="dropdown-item" type="button" onclick="card(158)">158</button>
+						<button class="dropdown-item" type="button" onclick="card(159)">159</button>
+						<button class="dropdown-item" type="button" onclick="card(160)">160</button>
+						<button class="dropdown-item" type="button" onclick="card(161)">161</button>
+						<button class="dropdown-item" type="button" onclick="card(162)">162</button>
+						<button class="dropdown-item" type="button" onclick="card(163)">163</button>
+						<button class="dropdown-item" type="button" onclick="card(164)">164</button>
+						<button class="dropdown-item" type="button" onclick="card(165)">165</button>
+						<button class="dropdown-item" type="button" onclick="card(166)">166</button>
+						<button class="dropdown-item" type="button" onclick="card(167)">167</button>
+						<button class="dropdown-item" type="button" onclick="card(168)">168</button>
+						<button class="dropdown-item" type="button" onclick="card(169)">169</button>
+						<button class="dropdown-item" type="button" onclick="card(170)">170</button>
+						<button class="dropdown-item" type="button" onclick="card(171)">171</button>
+						<button class="dropdown-item" type="button" onclick="card(172)">172</button>
+						<button class="dropdown-item" type="button" onclick="card(173)">173</button>
+						<button class="dropdown-item" type="button" onclick="card(174)">174</button>
+						<button class="dropdown-item" type="button" onclick="card(175)">175</button>
+						<button class="dropdown-item" type="button" onclick="card(176)">176</button>
+						<button class="dropdown-item" type="button" onclick="card(177)">177</button>
+						<button class="dropdown-item" type="button" onclick="card(178)">178</button>
+						<button class="dropdown-item" type="button" onclick="card(179)">179</button>
+						<button class="dropdown-item" type="button" onclick="card(180)">180</button>
+						<button class="dropdown-item" type="button" onclick="card(181)">181</button>
+						<button class="dropdown-item" type="button" onclick="card(182)">182</button>
+						<button class="dropdown-item" type="button" onclick="card(183)">183</button>
+						<button class="dropdown-item" type="button" onclick="card(184)">184</button>
+						<button class="dropdown-item" type="button" onclick="card(185)">185</button>
+						<button class="dropdown-item" type="button" onclick="card(186)">186</button>
+						<button class="dropdown-item" type="button" onclick="card(187)">187</button>
+						<button class="dropdown-item" type="button" onclick="card(188)">188</button>
+						<button class="dropdown-item" type="button" onclick="card(189)">189</button>
+						<button class="dropdown-item" type="button" onclick="card(190)">190</button>
+						<button class="dropdown-item" type="button" onclick="card(191)">191</button>
+						<button class="dropdown-item" type="button" onclick="card(192)">192</button>
+						<button class="dropdown-item" type="button" onclick="card(193)">193</button>
+						<button class="dropdown-item" type="button" onclick="card(194)">194</button>
+						<button class="dropdown-item" type="button" onclick="card(195)">195</button>
+						<button class="dropdown-item" type="button" onclick="card(196)">196</button>
+						<button class="dropdown-item" type="button" onclick="card(197)">197</button>
+						<button class="dropdown-item" type="button" onclick="card(198)">198</button>
+						<button class="dropdown-item" type="button" onclick="card(199)">199</button>
+						<button class="dropdown-item" type="button" onclick="card(200)">200</button>
+						<button class="dropdown-item" type="button" onclick="card(201)">201</button>
+						<button class="dropdown-item" type="button" onclick="card(202)">202</button>
+						<button class="dropdown-item" type="button" onclick="card(203)">203</button>
+						<button class="dropdown-item" type="button" onclick="card(204)">204</button>
+						<button class="dropdown-item" type="button" onclick="card(205)">205</button>
+						<button class="dropdown-item" type="button" onclick="card(206)">206</button>
+						<button class="dropdown-item" type="button" onclick="card(207)">207</button>
+						<button class="dropdown-item" type="button" onclick="card(208)">208</button>
+						<button class="dropdown-item" type="button" onclick="card(209)">209</button>
+						<button class="dropdown-item" type="button" onclick="card(210)">210</button>
+						<button class="dropdown-item" type="button" onclick="card(211)">211</button>
+						<button class="dropdown-item" type="button" onclick="card(212)">212</button>
+						<button class="dropdown-item" type="button" onclick="card(213)">213</button>
+						<button class="dropdown-item" type="button" onclick="card(214)">214</button>
+						<button class="dropdown-item" type="button" onclick="card(215)">215</button>
+						<button class="dropdown-item" type="button" onclick="card(216)">216</button>
+						<button class="dropdown-item" type="button" onclick="card(217)">217</button>
+						<button class="dropdown-item" type="button" onclick="card(218)">218</button>
+						<button class="dropdown-item" type="button" onclick="card(219)">219</button>
+						<button class="dropdown-item" type="button" onclick="card(220)">220</button>
+						<button class="dropdown-item" type="button" onclick="card(221)">221</button>
+						<button class="dropdown-item" type="button" onclick="card(222)">222</button>
+						<button class="dropdown-item" type="button" onclick="card(223)">223</button>
+						<button class="dropdown-item" type="button" onclick="card(224)">224</button>
+						<button class="dropdown-item" type="button" onclick="card(225)">225</button>
+						<button class="dropdown-item" type="button" onclick="card(226)">226</button>
+						<button class="dropdown-item" type="button" onclick="card(227)">227</button>
+						<button class="dropdown-item" type="button" onclick="card(228)">228</button>
+						<button class="dropdown-item" type="button" onclick="card(229)">229</button>
+						<button class="dropdown-item" type="button" onclick="card(230)">230</button>
+						<button class="dropdown-item" type="button" onclick="card(241)">241</button>
+						<button class="dropdown-item" type="button" onclick="card(242)">242</button>
+						<button class="dropdown-item" type="button" onclick="card(243)">243</button>
+						<button class="dropdown-item" type="button" onclick="card(244)">244</button>
+						<button class="dropdown-item" type="button" onclick="card(245)">245</button>
+						<button class="dropdown-item" type="button" onclick="card(246)">246</button>
+						<button class="dropdown-item" type="button" onclick="card(247)">247</button>
+						<button class="dropdown-item" type="button" onclick="card(248)">248</button>
+						<button class="dropdown-item" type="button" onclick="card(249)">249</button>
+						<button class="dropdown-item" type="button" onclick="card(250)">250</button>
+						<button class="dropdown-item" type="button" onclick="card(251)">251</button>
+						<button class="dropdown-item" type="button" onclick="card(252)">252</button>
+						<button class="dropdown-item" type="button" onclick="card(253)">253</button>
+						<button class="dropdown-item" type="button" onclick="card(254)">254</button>
+						<button class="dropdown-item" type="button" onclick="card(255)">255</button>
+						<button class="dropdown-item" type="button" onclick="card(256)">256</button>
+						<button class="dropdown-item" type="button" onclick="card(257)">257</button>
+						<button class="dropdown-item" type="button" onclick="card(258)">258</button>
+						<button class="dropdown-item" type="button" onclick="card(259)">259</button>
+						<button class="dropdown-item" type="button" onclick="card(260)">260</button>
+						<button class="dropdown-item" type="button" onclick="card(261)">261</button>
+						<button class="dropdown-item" type="button" onclick="card(262)">262</button>
+						<button class="dropdown-item" type="button" onclick="card(263)">263</button>
+						<button class="dropdown-item" type="button" onclick="card(264)">264</button>
+						<button class="dropdown-item" type="button" onclick="card(265)">265</button>
+						<button class="dropdown-item" type="button" onclick="card(266)">266</button>
+						<button class="dropdown-item" type="button" onclick="card(267)">267</button>
+						<button class="dropdown-item" type="button" onclick="card(268)">268</button>
+						<button class="dropdown-item" type="button" onclick="card(269)">269</button>
+						<button class="dropdown-item" type="button" onclick="card(270)">270</button>
+						<button class="dropdown-item" type="button" onclick="card(271)">271</button>
+						<button class="dropdown-item" type="button" onclick="card(272)">272</button>
+						<button class="dropdown-item" type="button" onclick="card(273)">273</button>
+						<button class="dropdown-item" type="button" onclick="card(274)">274</button>
+						<button class="dropdown-item" type="button" onclick="card(275)">275</button>
+						<button class="dropdown-item" type="button" onclick="card(276)">276</button>
+						<button class="dropdown-item" type="button" onclick="card(277)">277</button>
+						<button class="dropdown-item" type="button" onclick="card(278)">278</button>
+						<button class="dropdown-item" type="button" onclick="card(279)">279</button>
+						<button class="dropdown-item" type="button" onclick="card(280)">280</button>
+						<button class="dropdown-item" type="button" onclick="card(281)">281</button>
+						<button class="dropdown-item" type="button" onclick="card(282)">282</button>
+						<button class="dropdown-item" type="button" onclick="card(283)">283</button>
+						<button class="dropdown-item" type="button" onclick="card(284)">284</button>
+						<button class="dropdown-item" type="button" onclick="card(285)">285</button>
+						<button class="dropdown-item" type="button" onclick="card(286)">286</button>
+						<button class="dropdown-item" type="button" onclick="card(287)">287</button>
+						<button class="dropdown-item" type="button" onclick="card(288)">288</button>
+						<button class="dropdown-item" type="button" onclick="card(289)">289</button>
+						<button class="dropdown-item" type="button" onclick="card(290)">290</button>
+						<button class="dropdown-item" type="button" onclick="card(291)">291</button>
+						<button class="dropdown-item" type="button" onclick="card(292)">292</button>
+						<button class="dropdown-item" type="button" onclick="card(293)">293</button>
+						<button class="dropdown-item" type="button" onclick="card(294)">294</button>
+						<button class="dropdown-item" type="button" onclick="card(295)">295</button>
+						<button class="dropdown-item" type="button" onclick="card(296)">296</button>
+						<button class="dropdown-item" type="button" onclick="card(297)">297</button>
+						<button class="dropdown-item" type="button" onclick="card(298)">298</button>
+						<button class="dropdown-item" type="button" onclick="card(299)">299</button>
+						<button class="dropdown-item" type="button" onclick="card(300)">300</button>
+						<button class="dropdown-item" type="button" onclick="card(301)">301</button>
+						<button class="dropdown-item" type="button" onclick="card(302)">302</button>
+						<button class="dropdown-item" type="button" onclick="card(303)">303</button>
+						<button class="dropdown-item" type="button" onclick="card(304)">304</button>
+						<button class="dropdown-item" type="button" onclick="card(305)">305</button>
+						<button class="dropdown-item" type="button" onclick="card(306)">306</button>
+						<button class="dropdown-item" type="button" onclick="card(307)">307</button>
+						<button class="dropdown-item" type="button" onclick="card(308)">308</button>
+						<button class="dropdown-item" type="button" onclick="card(309)">309</button>
+						<button class="dropdown-item" type="button" onclick="card(310)">310</button>
+						<button class="dropdown-item" type="button" onclick="card(311)">311</button>
+						<button class="dropdown-item" type="button" onclick="card(312)">312</button>
+						<button class="dropdown-item" type="button" onclick="card(313)">313</button>
+						<button class="dropdown-item" type="button" onclick="card(314)">314</button>
+						<button class="dropdown-item" type="button" onclick="card(315)">315</button>
+						<button class="dropdown-item" type="button" onclick="card(316)">316</button>
+						<button class="dropdown-item" type="button" onclick="card(317)">317</button>
+						<button class="dropdown-item" type="button" onclick="card(318)">318</button>
+						<button class="dropdown-item" type="button" onclick="card(319)">319</button>
+						<button class="dropdown-item" type="button" onclick="card(320)">320</button>
+						<button class="dropdown-item" type="button" onclick="card(321)">321</button>
+						<button class="dropdown-item" type="button" onclick="card(322)">322</button>
+						<button class="dropdown-item" type="button" onclick="card(323)">323</button>
+						<button class="dropdown-item" type="button" onclick="card(324)">324</button>
+						<button class="dropdown-item" type="button" onclick="card(325)">325</button>
+						<button class="dropdown-item" type="button" onclick="card(326)">326</button>
+						<button class="dropdown-item" type="button" onclick="card(327)">327</button>
+						<button class="dropdown-item" type="button" onclick="card(328)">328</button>
+						<button class="dropdown-item" type="button" onclick="card(329)">329</button>
+						<button class="dropdown-item" type="button" onclick="card(330)">330</button>
+						<button class="dropdown-item" type="button" onclick="card(341)">341</button>
+						<button class="dropdown-item" type="button" onclick="card(342)">342</button>
+						<button class="dropdown-item" type="button" onclick="card(343)">343</button>
+						<button class="dropdown-item" type="button" onclick="card(344)">344</button>
+						<button class="dropdown-item" type="button" onclick="card(345)">345</button>
+						<button class="dropdown-item" type="button" onclick="card(346)">346</button>
+						<button class="dropdown-item" type="button" onclick="card(347)">347</button>
+						<button class="dropdown-item" type="button" onclick="card(348)">348</button>
+						<button class="dropdown-item" type="button" onclick="card(349)">349</button>
+						<button class="dropdown-item" type="button" onclick="card(350)">350</button>
+						<button class="dropdown-item" type="button" onclick="card(351)">351</button>
+						<button class="dropdown-item" type="button" onclick="card(352)">352</button>
+						<button class="dropdown-item" type="button" onclick="card(353)">353</button>
+						<button class="dropdown-item" type="button" onclick="card(354)">354</button>
+						<button class="dropdown-item" type="button" onclick="card(355)">355</button>
+						<button class="dropdown-item" type="button" onclick="card(356)">356</button>
+						<button class="dropdown-item" type="button" onclick="card(357)">357</button>
+						<button class="dropdown-item" type="button" onclick="card(358)">358</button>
+						<button class="dropdown-item" type="button" onclick="card(359)">359</button>
+						<button class="dropdown-item" type="button" onclick="card(360)">360</button>
+						<button class="dropdown-item" type="button" onclick="card(361)">361</button>
+						<button class="dropdown-item" type="button" onclick="card(362)">362</button>
+						<button class="dropdown-item" type="button" onclick="card(363)">363</button>
+						<button class="dropdown-item" type="button" onclick="card(364)">364</button>
+						<button class="dropdown-item" type="button" onclick="card(365)">365</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--card functionality script-->
+		<script src="card.js"></script>
+		<!--Bootstrap scripts-->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
