@@ -2,7 +2,7 @@ function login() {
 	var username = document.getElementById("username").value;
 	var password = document.getElementById("password").value;
 
-	if ((username == "joel" && password == "joel") || (username == "nikki" && password == "nikki")) {
+	if (((username == "joel" || username == "Joel") && password == "joel") || ((username == "nikki" || username == "Nikki") && password == "nikki")) {
 		window.location.href = "https://jwwitherspoon.github.io/nikki/anniversary.html"
 	}
 	else {
