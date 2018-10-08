@@ -103,7 +103,7 @@ function card(cardNumber) {
 			document.getElementById("card").innerHTML = "22. You support me in my decisions even when you don't agree with them.";
 			break;
 		case 23:
-			document.getElementById("card").innerHTML = "23. You are so good at playing piano!.";
+			document.getElementById("card").innerHTML = "23. You are so good at playing piano!";
 			break;
 		case 24:
 			document.getElementById("card").innerHTML = "24. You write songs with me.";
