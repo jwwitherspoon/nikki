@@ -3,7 +3,7 @@ function next() {
 	var value = document.getElementById("card").innerHTML;
 	//If no reason has been displayed yet, display the first reason
 	if (value == "This a website version of the book you made me last year. Click Next or Random for reasons why I love you!") {
-		document.getElementById("card").innerHTML = "1. You are direct with me.";
+		card(1);
 		return 0;
 	}
 	//Use the number at the beginning of the string as the current card number
@@ -130,7 +130,7 @@ function card(cardNumber) {
 			document.getElementById("card").innerHTML = "31. You are a good mother to Cleo.";
 			break;
 		case 32:
-			document.getElementById("card").innerHTML = "32. You are going to be an amazing mother to Cleo.";
+			document.getElementById("card").innerHTML = "32. You are going to be an amazing mother to our children.";
 			break;
 		case 33:
 			document.getElementById("card").innerHTML = "33. You are learning healthy ways to deal with your feelings.";
@@ -215,6 +215,36 @@ function card(cardNumber) {
 			break;
 		case 60:
 			document.getElementById("card").innerHTML = "60. You take an interest in the things I like even when you don't understand them.";
+			break;
+		case 61:
+			document.getElementById("card").innerHTML = "61. You introduce me to new movies.";
+			break;
+		case 62:
+			document.getElementById("card").innerHTML = "62. You trust me.";
+			break;
+		case 63:
+			document.getElementById("card").innerHTML = "63. You have a beautiful singing voice.";
+			break;
+		case 64:
+			document.getElementById("card").innerHTML = "64. You tell me to breathe when I'm freaking out.";
+			break;
+		case 65:
+			document.getElementById("card").innerHTML = "65. You never give me ultimatums.";
+			break;
+		case 66:
+			document.getElementById("card").innerHTML = "66. &quot;I'm a leech!&quot;";
+			break;
+		case 67:
+			document.getElementById("card").innerHTML = "67. Your voice goes up when you end a sentence with the word &quot;me.&quot;";
+			break;
+		case 68:
+			document.getElementById("card").innerHTML = "68. You look so cute in beanies.";
+			break;
+		case 69:
+			document.getElementById("card").innerHTML = "69. You are kind.";
+			break;
+		case 70:
+			document.getElementById("card").innerHTML = "70. You are compassionate.";
 			break;
 		default:
 			document.getElementById("card").innerHTML = "Reason " + cardNumber + " does not exist yet.";
