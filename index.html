@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!--Necessary Bootstrap tags-->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<title>Login</title>
 
+		<!--Bootstrap CSS-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<style>
-			body {background-color: #7c3ddb;}
-		</style>
+		<!--Developer CSS-->
+		<link rel="stylesheet" href="css/login.css">
 
+		<!--Developer script-->
 		<script src="js/login.js"></script>
 		<!--Bootstrap scripts-->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -19,8 +21,8 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1 class="text-center text-light">Login</h1>
-			<div class="jumbotron bg-light text-center">
+			<div class="mx-auto rounded text-center">
+				<h2>Login</h2>
 				<form>
 					<div class="form-group">
 						<label for="username">Username</label>
@@ -32,7 +34,7 @@
 					</div>
 					<button type="button" class="btn btn-primary" onclick="login()">Log In</button>
 				</form>
-				<h3 id="message"></h3>
+				<p id="message"></p>
 			</div>
 		</div>
 	</body>
