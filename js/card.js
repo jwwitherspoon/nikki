@@ -246,6 +246,96 @@ function card(cardNumber) {
 		case 70:
 			document.getElementById("card").innerHTML = "70. You are compassionate.";
 			break;
+		case 71:
+			document.getElementById("card").innerHTML = "71. You bring me coffee from Starbucks.";
+			break;
+		case 72:
+			document.getElementById("card").innerHTML = "72. You send me encouraging texts when I'm down.";
+			break;
+		case 73:
+			document.getElementById("card").innerHTML = "73. You balance me out.";
+			break;
+		case 74:
+			document.getElementById("card").innerHTML = "74. You did premarital counseling with me.";
+			break;
+		case 75:
+			document.getElementById("card").innerHTML = "75. You get along with my family.";
+			break;
+		case 76:
+			document.getElementById("card").innerHTML = "76. You are fiercely loyal.";
+			break;
+		case 77:
+			document.getElementById("card").innerHTML = "77. You educate me in the area of musical theater.";
+			break;
+		case 78:
+			document.getElementById("card").innerHTML = "78. &quot;Come baaaaaaack!&quot;";
+			break;
+		case 79:
+			document.getElementById("card").innerHTML = "79. You still give me butterflies sometimes.";
+			break;
+		case 80:
+			document.getElementById("card").innerHTML = "80. You make weird kissing noises with me.";
+			break;
+		case 81:
+			document.getElementById("card").innerHTML = "81. You love your family even though they often let you down.";
+			break;
+		case 82:
+			document.getElementById("card").innerHTML = "82. You write me beautiful poems.";
+			break;
+		case 83:
+			document.getElementById("card").innerHTML = "83. You let me read What You Don't Know before you finished it.";
+			break;
+		case 84:
+			document.getElementById("card").innerHTML = "84. You let me open the car door for you.";
+			break;
+		case 85:
+			document.getElementById("card").innerHTML = "85. You don't push me to break my convictions.";
+			break;
+		case 86:
+			document.getElementById("card").innerHTML = "86. I enjoy your presence.";
+			break;
+		case 87:
+			document.getElementById("card").innerHTML = "87. Your kisses are amazing.";
+			break;
+		case 88:
+			document.getElementById("card").innerHTML = "88. You can admit when you're wrong.";
+			break;
+		case 89:
+			document.getElementById("card").innerHTML = "89. You're silly :)";
+			break;
+		case 90:
+			document.getElementById("card").innerHTML = "90. You think I'm handsome.";
+			break;
+		case 91:
+			document.getElementById("card").innerHTML = "91. You pray with me.";
+			break;
+		case 92:
+			document.getElementById("card").innerHTML = "92. You make an effort to understand me even when you want to fight.";
+			break;
+		case 93:
+			document.getElementById("card").innerHTML = "93. You look so good in the dresses you pick :3";
+			break;
+		case 94:
+			document.getElementById("card").innerHTML = "94. There is not a materialistic bone in your body.";
+			break;
+		case 95:
+			document.getElementById("card").innerHTML = "95. You cuddle with me often.";
+			break;
+		case 96:
+			document.getElementById("card").innerHTML = "96. You burned your ex's stuff stuff with me.";
+			break;
+		case 97:
+			document.getElementById("card").innerHTML = "97. You're willing to try new video games with me, even when you hate them :)";
+			break;
+		case 98:
+			document.getElementById("card").innerHTML = "98. Your hugs are my favorite in the world.";
+			break;
+		case 99:
+			document.getElementById("card").innerHTML = "99. You go on ice cream/froyo dates with me.";
+			break;
+		case 100:
+			document.getElementById("card").innerHTML = "100. You let me spend time with my friends.";
+			break;
 		default:
 			document.getElementById("card").innerHTML = "Reason " + cardNumber + " does not exist yet.";
 			break;
