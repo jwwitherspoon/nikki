@@ -322,7 +322,7 @@ function card(cardNumber) {
 			document.getElementById("card").innerHTML = "95. You cuddle with me often.";
 			break;
 		case 96:
-			document.getElementById("card").innerHTML = "96. You burned your ex's stuff stuff with me.";
+			document.getElementById("card").innerHTML = "96. You burned your ex's stuff with me.";
 			break;
 		case 97:
 			document.getElementById("card").innerHTML = "97. You're willing to try new video games with me, even when you hate them :)";
