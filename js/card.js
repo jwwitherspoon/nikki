@@ -337,7 +337,7 @@ function card(cardNumber) {
 			document.getElementById("card").innerHTML = "100. You let me spend time with my friends.";
 			break;
 		default:
-			document.getElementById("card").innerHTML = "Reason " + cardNumber + " does not exist yet.";
+			document.getElementById("card").innerHTML = cardNumber + ". Reason does not exist yet.";
 			break;
 	}
 }
