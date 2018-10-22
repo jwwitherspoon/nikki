@@ -121,10 +121,10 @@ function card(cardNumber) {
 			document.getElementById("card").innerHTML = "28. You go on double dates with my friends.";
 			break;
 		case 29:
-			document.getElementById("card").innerHTML = "29. You push me to do things that make me uncomfortable.";
+			document.getElementById("card").innerHTML = "29. You push me to do things I need to do when those things make me uncomfortable.";
 			break;
 		case 30:
-			document.getElementById("card").innerHTML = "30. You are adventurous in the bedroom.";
+			document.getElementById("card").innerHTML = "30. You are adventurous.";
 			break;
 		case 31:
 			document.getElementById("card").innerHTML = "31. You are a good mother to Cleo.";
@@ -335,6 +335,66 @@ function card(cardNumber) {
 			break;
 		case 100:
 			document.getElementById("card").innerHTML = "100. You let me spend time with my friends.";
+			break;
+		case 101:
+			document.getElementById("card").innerHTML = "101. You suggest that we spend time with my dad without me suggesting it first.";
+			break;
+		case 102:
+			document.getElementById("card").innerHTML = "102. You offer me gum all the time.";
+			break;
+		case 103:
+			document.getElementById("card").innerHTML = "103. I don't have to give you bright sides; you find them yourself.";
+			break;
+		case 104:
+			document.getElementById("card").innerHTML = "104. You are willing to talk about difficult topics with me.";
+			break;
+		case 105:
+			document.getElementById("card").innerHTML = "105. You appreciate the beauty of sunsets.";
+			break;
+		case 106:
+			document.getElementById("card").innerHTML = "106. You are willing to split costs with me so I don't go broke.";
+			break;
+		case 107:
+			document.getElementById("card").innerHTML = "107. You helped me pack up my apartment.";
+			break;
+		case 108:
+			document.getElementById("card").innerHTML = "108. You eat at the table with me even when you want to watch TV.";
+			break;
+		case 109:
+			document.getElementById("card").innerHTML = "109. You watch shows with me that you have no interest in.";
+			break;
+		case 110:
+			document.getElementById("card").innerHTML = "110. You have study sessions with me.";
+			break;
+		case 111:
+			document.getElementById("card").innerHTML = "111. You let me cry on your shoulder.";
+			break;
+		case 112:
+			document.getElementById("card").innerHTML = "112. You go on walks with me.";
+			break;
+		case 113:
+			document.getElementById("card").innerHTML = "113. You let me serve you.";
+			break;
+		case 114:
+			document.getElementById("card").innerHTML = "114. You respect me.";
+			break;
+		case 115:
+			document.getElementById("card").innerHTML = "115. You prioritize telling me that I am right.";
+			break;
+		case 116:
+			document.getElementById("card").innerHTML = "116. You take an interest in my coding projects.";
+			break;
+		case 117:
+			document.getElementById("card").innerHTML = "117. You let me show off when I am proud of something.";
+			break;
+		case 118:
+			document.getElementById("card").innerHTML = "118. You dig wax out of my ears even though it grosses you out.";
+			break;
+		case 119:
+			document.getElementById("card").innerHTML = "119. You are honest with me.";
+			break;
+		case 120:
+			document.getElementById("card").innerHTML = "120. You encourage me to go to SA meetings.";
 			break;
 		default:
 			document.getElementById("card").innerHTML = cardNumber + ". Reason does not exist yet.";
