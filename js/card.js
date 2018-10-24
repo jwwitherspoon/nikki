@@ -396,6 +396,36 @@ function card(cardNumber) {
 		case 120:
 			document.getElementById("card").innerHTML = "120. You encourage me to go to SA meetings.";
 			break;
+		case 121:
+			document.getElementById("card").innerHTML = "121. You play Talos Priniciple even though it frustrates you to no end :P";
+			break;
+		case 122:
+			document.getElementById("card").innerHTML = "122. You introduced me to the Punch Brothers. They're SO good.";
+			break;
+		case 123:
+			document.getElementById("card").innerHTML = "123. You buy me pizza.";
+			break;
+		case 124:
+			document.getElementById("card").innerHTML = "124. You love me when I'm difficult to love.";
+			break;
+		case 125:
+			document.getElementById("card").innerHTML = "125. You put up with Starbucks because you know it is the best option.";
+			break;
+		case 126:
+			document.getElementById("card").innerHTML = "126. You take naps with me.";
+			break;
+		case 127:
+			document.getElementById("card").innerHTML = "127. You love me and you like me :)";
+			break;
+		case 128:
+			document.getElementById("card").innerHTML = "128. You help me even when it means sacrificing your own needs.";
+			break;
+		case 129:
+			document.getElementById("card").innerHTML = "129. You encouraged me to go to counseling when I needed it.";
+			break;
+		case 130:
+			document.getElementById("card").innerHTML = "130. You get cute with me.";
+			break;
 		default:
 			document.getElementById("card").innerHTML = cardNumber + ". Reason does not exist yet.";
 			break;
