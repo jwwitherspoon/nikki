@@ -1,6 +1,5 @@
 <!--TODO
 	add reasons
-	make button glyphicons work?
 	add "view all" page?
 -->
 
@@ -15,6 +14,8 @@
 
 	    <!--Bootstrap CSS-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!--Font Awesome CSS-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 		<!--Developer CSS-->
 		<link rel="stylesheet" href="css/anniversary.css">
 
@@ -30,14 +31,18 @@
 			<div class="mx-auto rounded text-center">
 				<h3 class="text-center">365 Reasons Why I Love Nikki</h3>
 				<p id="card">This a website version of the book you made me last year. Click Next or Random for reasons why I love you!</p>
-				<button class="btn btn-primary" onclick="previous()">Prev</button>
+				<button class="btn btn-primary" onclick="previous()">
+					<span class="fas fa-chevron-left"></span>
+				</button>
 				<button class="btn btn-primary" onclick="random()">Random</button>
-				<button class="btn btn-primary" onclick="next()">Next</button>
+				<button class="btn btn-primary" onclick="next()">
+					<span class="fas fa-chevron-right"></span>
+				</button>
 				<div class="dropdown">
-					<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
 						Select Reason
 					</button>
-					<div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
+					<div class="dropdown-menu scrollable-menu">
 						<button class="dropdown-item" type="button" onclick="card(1)">1</button>
 						<button class="dropdown-item" type="button" onclick="card(2)">2</button>
 						<button class="dropdown-item" type="button" onclick="card(3)">3</button>
