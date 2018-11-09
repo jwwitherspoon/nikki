@@ -456,6 +456,66 @@ function card(cardNumber) {
 		case 140:
 			document.getElementById("card").innerHTML = "140. I can always count on you.";
 			break;
+		case 141:
+			document.getElementById("card").innerHTML = "141. You are protective of those you love.";
+			break;
+		case 142:
+			document.getElementById("card").innerHTML = "142. You stick your tongue out when you put effort into something. It's super cute.";
+			break;
+		case 143:
+			document.getElementById("card").innerHTML = "143. You are trying to work on being a sore loser so we can enjoy games together.";
+			break;
+		case 144:
+			document.getElementById("card").innerHTML = "144. You are my greatest blessing.";
+			break;
+		case 145:
+			document.getElementById("card").innerHTML = "145. You hate the cold.";
+			break;
+		case 146:
+			document.getElementById("card").innerHTML = "146. You think tiny things are adorable.";
+			break;
+		case 147:
+			document.getElementById("card").innerHTML = "147. &quot;It's a really freaking big dog!&quot;";
+			break;
+		case 148:
+			document.getElementById("card").innerHTML = "148. You exaggerate your measurements of time.";
+			break;
+		case 149:
+			document.getElementById("card").innerHTML = "149. You are clumsy.";
+			break;
+		case 150:
+			document.getElementById("card").innerHTML = "150. You are cute when you get nervous.";
+			break;
+		case 151:
+			document.getElementById("card").innerHTML = "151. You let me open doors for you.";
+			break;
+		case 152:
+			document.getElementById("card").innerHTML = "152. You love worshipping God through music.";
+			break;
+		case 153:
+			document.getElementById("card").innerHTML = "153. You wash my dishes for me.";
+			break;
+		case 154:
+			document.getElementById("card").innerHTML = "154. You are talented with makeup.";
+			break;
+		case 155:
+			document.getElementById("card").innerHTML = "155. You introduced me to charcoal masks.";
+			break;
+		case 156:
+			document.getElementById("card").innerHTML = "156. You love peanut butter and cheese.";
+			break;
+		case 157:
+			document.getElementById("card").innerHTML = "157. You share pizza with me.";
+			break;
+		case 158:
+			document.getElementById("card").innerHTML = "158. You play Heads Up with me.";
+			break;
+		case 159:
+			document.getElementById("card").innerHTML = "159. You keep me accountable for my finances.";
+			break;
+		case 160:
+			document.getElementById("card").innerHTML = "160. You are VERY good at salsa dancing ;)";
+			break;
 		default:
 			document.getElementById("card").innerHTML = cardNumber + ". Reason does not exist yet.";
 			break;
