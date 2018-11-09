@@ -17,6 +17,12 @@ body {
 	padding: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+	.mx-auto {
+		width: 200px;
+	}
+}
+
 p {
 	margin-top: 30px;
 	margin-bottom: 30px;
